@@ -1,0 +1,116 @@
+<html>
+
+<head>
+    <title> Bai 4</title>
+</head>
+
+<body>
+    <h1> Form tạo thông tin</h1>
+    <form>
+        <!-- input nếu không truyền type thì type mặc định sẽ là text -->
+        <div>
+            <b> Họ và tên:</b>
+            <p>
+                <input type="text" name="hoVaTen">
+            </p>
+        </div>
+        <div>
+            <b> Giới thiệu bản thân:</b>
+            <p>
+                <textarea name="gioiThieu"></textarea>
+            </p>
+        </div>
+        <div>
+            <p><b>Email</b></p>
+            <input type="email" name="email">
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+
+        <!-- <div>
+            <p><b>số điện thoại</b></p>
+            <input name ="soDienThoai1"
+            type="tel"
+            placeholder ="Dạng số 123"
+            required
+            pattern="([0-9]{1}(-[0-9]{3})(-[0-9]{3})(-[0-9]{4}))">
+        </div> -->
+        <div>
+            <!-- nhập số đt ở việt nam -->
+            <p><b>Số điện thoại</b></p>
+            <input name="soDienThoai2" type="tel" placeholder="nhập số đt" required
+                panttern="([0]{1}([9, 3, 6, 8]{1})([0-9]{8}))">
+        </div>
+        <div>
+            <p> <b> Giới tính</b></p>
+            <input type="radio" name="gioiTinh" value="nam">Nam <br>
+            <input type="radio" name="gioiTinh" value="nu"> Nữ <br>
+            <input type="radio" name="gioiTinh" value="khac"> Khác
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+
+        <div>
+            <p><b> Sở thích</b></p>
+            Game:<input type="checkbox" name="soThich" value="game"><br>
+            Music:<input type="checkbox" name="soThich" value="music"><br>
+            Sport:<input type="checkbox" name="soThich" value="sport"><br>
+        </div>
+
+        <div>
+            <p><b> Trình duyệt web hay sử dụng</b></p>
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="internet Explorer">
+                <option value="Fire Fox">
+                <option value="Chrome">
+                <option value="Safari">
+                <option value="Cốc cốc">
+                <option value="Opera">
+            </datalist>
+
+            <select name="browsers">
+                <option value="internet Explorer">internet Explorer</option>
+                <option value="Fire Fox">Fire Fox</option>
+                <option value="Chrome">Chrome</option>
+                <option value="Safari">Safari</option>
+                <option value="Cốc cốc">Cốc cốc</option>
+                <option value="Opera">Opera</option>
+            </select>
+        </div>
+
+        <div>
+            0 <input type="range" id="a" value="50">100
+        </div>
+
+        <div>
+            <input type="submit">
+            <button>click</button>
+            <input type="reset">
+        </div>
+
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/f9bwJNw8RvE?si=2psoIx6kDXg39_Mx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </form>
+
+    <MARQUEE>
+        <img src="/anh/hieuhler.png"> 
+    </MARQUEE>
+
+    <audio controls>
+        <source src="" type="audio/mp3">
+    </audio>
+    <video controls>
+        <source src="" type="video/mp4">
+    </video>
+
+    <!-- ví dụ thẻ h1 -->
+     
+            &lth1&gt dùng để ... &lt/h1&gt
+
+    
+</body>
+
+</html>
