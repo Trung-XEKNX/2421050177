@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+
+            color: aqua;
+        }
+        #nhom{          
+            /* dùng lệnh # để tạo id */
+            color:red ;
+        }
+        .khoa{
+            /* dùng lệnh . để tạo class */
+            color:purple ;
+        }
+        p.khoa{
+            /* dùng p. để select thẻ p có class là khoa trỏ thẻ p để dùng   */ 
+            color: blue;
+        }
+
+        .khoi1{
+            background-color: green;
+        }
+        .khoi2{
+            background-color: yellow;
+            /* 1 giá trị: cách đều xung quanh = giá trị đó  */
+            /* 2 giá trị: giá trị đầu ( trên dưới ), giá trị 2 ( trái, phải) */
+            /* 4 giá trị: theo thứ tự trên - phải - dưới - trái */
+            margin: 50px 200px 10px 100px;
+
+            padding: 50px ;
+        }
+        .khoi3{
+            background-color: red;
+        }
+        .khoi4{
+            background-color: gray;
+            display: flex;
+        }
+        .khoi5{
+            background-color: orange;
+            width: 50%;
+        }
+        .khoi6{
+            background-color: blue;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color:yellow ;">trường đại học mỏ đc</h1>
+    <p class="khoa">Môn PT ứng dụng WEB</p>
+    <p>HUMG</p>
+    <div id="nhom">Công nghệ thông tin</div>
+    
+
+    <div class="khoi1">khối 1</div>
+    <div class="khoi2">khối 2</div>
+    <div class="khoi3">khối 3</div>
+
+    <div class="khoi4">
+        <div class="khoi5">khối 5</div>
+
+        <div class="khoi6">Khối 6</div>
+    </div>
+
+</body>
+</html>
