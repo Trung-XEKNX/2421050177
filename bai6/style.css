@@ -214,3 +214,52 @@ button {
 .thong-bao-item span {
     color: black;
 }
+.app-mobile {
+    width: 100%;
+    border: 1px solid #2fa4e7;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.app-tieu-de {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 10px 10px;
+    border-bottom: 1px solid #2fa4e7;
+    font-weight: bold;
+}
+
+.app-noi-dung {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app img{
+    width: 80px;
+    height: 80px;
+}
+
+.nut-trai,
+.nut-phai {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: #aaa;
+    color: white;
+    font-size: 35px;
+    line-height: 25px;
+}
