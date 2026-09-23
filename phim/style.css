@@ -67,7 +67,7 @@ main {
 
 .banner-anh {
     width: 100%;
-    height: 670 px;
+    height: 670px;
     border-radius: 10px;
     object-fit: cover
 }
@@ -104,6 +104,7 @@ main {
 
 .phim-poster:hover {
     transform: scale(1.05);
+    
 }
 
 .danh-sach-nhan-vat {
