@@ -91,6 +91,7 @@ main {
 .phim {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .phim-poster {
@@ -121,7 +122,7 @@ main {
 .nhan-vat-poster {
     width: 150px;
     height: 150px;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     border-radius: 50%;
     object-fit: cover;
 }

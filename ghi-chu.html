@@ -1,0 +1,97 @@
+<div Phân tích các bước làm bài> 
+
+1. Header
+
+2. Slider
+
+3. Content
+
+               1. About
+
+                  2. Tour
+
+                   3. Contact
+
+                4. Image
+
+4. Footer
+
+2. Dựng base (xây móng)
+
+3. Xây dựng từng thành phần theo phân tích
+
+4. Hoàn thiện
+
+</div>
+<div 3 cái này đi với nhau>
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+</div>
+
+
+<div Lớp giả>
+:root - gốc tham chiếu vào phần tử gốc chính là vào vào <html> mình tạo 1 lớp giả có thể sử dụng bao trùm toàn bộ bài (thường đi với biến)
+
+:hover - lớp giả này sẽ được kích hoạt thuộc tính khi bạn di chuột vào đối tượng đó (ví dụ như bạn cho thuộc tính chữ màu đỏ, nó chỉ biến thành màu đỏ khi bạn di chuột vào chữ đó)
+
+:active - lớp này hoạt động tương tự hover nhưng thay vào đó bạn phải bấm vào đối tượng
+
+:first/last-child - lấy ra thằng đầu tiên hoặc cuối cùng trong đối tượng, ví dụ có 5 <li> thì bạn muốn đặt thuộc tính chỉ riêng vào <li> đầu tiên thì dùng li:first-child
+</div>
+
+
+
+
+
+<div phần tử giả>
+
+::before - đứng trước
+
+trong thường có ít nhất là content: "" và display:
+
+::after - đứng sau
+
+:: first-letter - chữ đầu tiên sẽ được sử dụng thuộc tính css, còn lại thì không 
+
+:: first-line - dòng đầu tiên sẽ được sử dụng thuộc tính css, còn lại thì không
+
+:: selection - sự lựa chọn, khi bạn bôi đen thì dòng đó sẽ được thừa hưởng thuộc tính trong selection
+</div>
+
+<div>
+box-sizing: border-box;
+giúp ta thêm thuộc tính border, padding mà không bị tăng kích thước box
+</div>
+
+
+<div cách dùng background css>
+background-image: linear-gradient ( dải màu) {1 ( độ), red( màu ở cuối), white( màu ở trên) };
+
+background-sizze: kích thước ảnh
+
+background-image: url( link ảnh ) ;để chèn ảnh vào
+
+background--repeat : chỉnh sự lặp lại, k muốn lặp thì để none;
+
+
+background-size: contain hiển thị đầy đủ ảnh 
+
+ background-position: right bottom; chỉnh vị trí ảnh, với right bottom là ảnh nằm ở phía dưới phần bên phải, viết 1 giá trị thì sẽ mặc định + center
+
+ background-origin: border-box khiến ảnh tràn viền 
+</div>
+
+
+
+<div cách dùng position, nhớ dùng top: 0; với fixed, sticky để gắn cố định thanh công cụ lên trên cùng>
+ Position : vị trí
+- relative : tương đối, cố định đứng ở đó, có thể đè dc
+
+- absolute: tuyệt đối - lấy thẻ cha ( có chứa position- relative ) gần nhất làm gốc tọa độ, khi cho thuộc tính bottom : 0; left 0; right 0; top: 0; thì sẽ bao phủ toàn bộ class cha
+
+
+- fixed: đứng yên - phụ thuộc vào trình duyệt, đóng băng tại vị trí được gán, không thể di chuyển khi mình thao tác 
+
+-sticky: bám dính - dòng sử dụng sticky sẽ được giữ lại khi bạn trượt xuống, kết hợp với yêu cầu : ví dụ yêu cầu top: 0; thì khi bạn kéo dòng đó đến khi dòng đó đạt top = 0 thì nó sẽ được giữ lại ở vị trí đó
+</div>

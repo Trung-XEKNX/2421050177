@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {}
+
+#header {
+    height: 46px;
+    /* width: 670px; */
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+
+#thanh-cong-cu {
+    display: flex;
+    gap: 10px;
+
+
+}
+
+#thanh-cong-cu li {
+    list-style-type: none;
+    padding: 15px 20px;
+
+}
+
+#thanh-cong-cu li:hover {
+    background-color: #CCCCCC;
+}
+
+#thanh-cong-cu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+
+}
+
+.trong-more {
+    display: none;
+    list-style-type: none;
+    background-color: black;
+    position: absolute;
+    top: 46.7px;
+    left: 400px;
+
+}
+
+#thanh-cong-cu li:hover .trong-more {
+    display: block;
+}
+
+.trong-more li:hover a {
+    display: block;
+}
+
+.search {
+    padding-right: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.search a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#slider {
+    height: 680px;
+    background-color: #333;
+}
+
+
+
+/* SLIDER */
+#slider img {
+    height: 700px;
+    width: 1490px;
+    position: relative
+}
+
+#slider .trong-anh b {
+    background-color: ;
+    position: absolute;
+    top: 100;
+}
+
+
+
+
+
+
+
+#content {
+    height: 800px;
+}

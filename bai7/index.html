@@ -92,6 +92,119 @@
         document.writeln("<br>");
         document.writeln(hoVaTen.toLocaleLowerCase());
 
+        var homNay = new Date();
+        document.writeln("<br>");
+        document.writeln(homNay);
+
+        var ngay = new Date("3/3/2026");
+        document.writeln("<br>");
+        document.writeln(ngay);
+
+        var namNay = homNay.getFullYear();
+        document.writeln("<br>");
+        document.writeln(namNay);
+
+        var thangNay = homNay.getMonth() + 1;
+        document.writeln("<br>");
+        document.writeln(thangNay);
+        // tháng bị lùi 1 tháng vì tháng 1 hiển thị là 0
+
+        var ngayHomNay = homNay.getDate();
+        document.writeln("<br>");
+        document.writeln(ngayHomNay);
+
+        var thu = homNay.getDay() + 1;
+        document.writeln("<br>");
+        document.writeln(thu);
+
+        document.writeln("<br>");
+        document.writeln("Hôm nay là thứ " + thu + " ngày " + ngayHomNay + " tháng " + thangNay + " năm " + namNay);
+
+        //mảng
+        var mang = [1, 2, 3, 4, 5];
+        document.writeln("<br>");
+        document.writeln(mang[2]);
+        document.writeln("<br>");
+        document.writeln(mang.length);
+
+        var mangTen = ["Quốc Trung", "Đăng Khoa", "Minh Hiếu"];
+        document.writeln(mangTen[2]);
+
+        var mangSo = [1, 2, 3, 4, 5, "Quốc Trung", "Đăng Khoa", "Minh Hiếu"];
+        document.writeln(mangSo[5]);
+
+        var d = mang.concat(mangSo, mangTen);
+        document.writeln("<br>");
+        document.write(d.pop());
+
+        document.writeln("<br>");
+        d.push("gay");
+        document.write(d);
+
+        document.writeln("<br>");
+        document.write(mangSo.reverse());
+
+        //object
+        var thongTinSinhVien = {
+            ten: "Nguyễn Quốc Trung",
+            namSinh: 2006,
+            queQuan: {
+                tinh: " Phú Thọ",
+                phuong: "nông trang"
+            }
+        };
+        document.write(thongTinSinhVien.queQuan.tinh);
+
+        tuoi = namNay - thongTinSinhVien.namSinh;
+        thongTinSinhVien.tuoi = tuoi;
+        // console.log(thongTinSinhVien);
+        // boollean: true nam/ false nữ
+        thongTinSinhVien.gioiTinh = true;
+
+        var danhSach = [
+            {
+                ten: "Nguyễn Đăng Khoa",
+                namSinh: 2006,
+                queQuan: {
+                    tinh: "Hà Nội",
+                    phuong: "Thiên Lộc"
+                }
+            },
+            {
+                ten: "Nguyễn Minh Hiếu",
+                namSinh: 2006,
+                queQuan: {
+                    tinh: "Hà Nội",
+                    phuong: "Cổ Nhuế"
+                }
+            }
+        ];
+        document.writeln("<br>");
+        console.log(danhSach);
+
+        // == != > < 
+        /// so sanh cả giá trị và kiểu dữ liệu
+        var so1 = 10;
+        var so2 = "10";
+        document.writeln("<br>");
+        document.writeln(so1 === so2);
+
+
+        // && ||
+        document.writeln("<br>");
+        if(thu >= 6){
+            document.writeln("cuối tuần");
+        }else{
+            document.writeln(" đi học");
+        }
+        document.writeln("<br>");
+        var so = 5;
+        if (so % 2 == 0){
+            document.writeln("so chan");
+        }
+        else{
+            document.writeln("So le");
+        }
     </script>
     <script src="script.js"></script>
 </body>
