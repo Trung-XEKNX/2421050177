@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        Nhập điểm A: <input id="diemA" type="number">
+    </div>
+    <div>
+        Nhập điểm B: <input id="diemB" type="number">
+    </div>
+    <div>
+        Nhập điểm C: <input id="diemC" type="number">
+    </div>
+    <div>
+        <button onclick="tinhDiem()">Tính điểm</button>
+    </div>
+    <div>
+        kết quả: <input id="ketQua" type="text">
+    </div>
+
+
+    <div>
+        Nhập năm sinh: <input id="namSinh" type="number">
+    </div>
+    <div>
+        <button onclick="layNamSinh()">Tính tuổi </button>
+    </div>
+    <div>
+        kết quả: <input id="ketQua1" type="text">
+    </div>
+    <script>
+        var year = new Date().getFullYear()
+
+        function layNamSinh() {
+            var ns = parseInt(document.getElementById("namSinh").value)
+            document.getElementById("ketQua1").value = tinhTuoi(ns);
+        }
+        function tinhTuoi(ns){
+            return year - ns;
+        }
+
+
+
+
+
+
+        function tinhDiem() {
+            var a = document.getElementById("diemA").value;
+            var b = document.getElementById("diemB").value;
+            var c = document.getElementById("diemC").value;
+            tinhDiemChu(a, b, c);
+
+            document.getElementById("ketQua").value = tinhDiemChu(a, b, c);
+        }
+
+        function tinhDiemChu(a, b, c) {
+            var tong = a * 0.6 + b * 0.3 + c * 0.1;
+            var kq = "";
+            if (tong > 0 && tong < 4) {
+                kq = "F";
+            }
+            else if (tong > 4 && tong < 5) {
+                kq = "D";
+            }
+            else if (tong > 5 && tong < 7) {
+                kq = "C";
+            }
+            else if (tong > 7 && tong < 8) {
+                kq = "B";
+            }
+            else if (tong > 8 && tong <= 10) {
+                kq = "A";
+            }
+            else {
+                kq = "Nhập sai điểm";
+            }
+            return kq;
+        }
+
+
+    </script>
+
+
+
+</body>
+
+</html>

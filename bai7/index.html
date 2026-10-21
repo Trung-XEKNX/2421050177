@@ -192,19 +192,112 @@
 
         // && ||
         document.writeln("<br>");
-        if(thu >= 6){
+        if (thu >= 6) {
             document.writeln("cuối tuần");
-        }else{
+        } else {
             document.writeln(" đi học");
         }
         document.writeln("<br>");
         var so = 5;
-        if (so % 2 == 0){
+        if (so % 2 == 0) {
             document.writeln("so chan");
         }
-        else{
+        else {
             document.writeln("So le");
         }
+
+
+        var so = '2000000000000000000000000001';
+        var doDai = so.length;
+        var soCuoiCung = so[doDai - 1];
+        document.writeln("<br>");
+        document.writeln(soCuoiCung);
+        if (soCuoiCung % 2 == 0) {
+            document.writeln(so + " la so chan");
+        }
+        else {
+            document.writeln(so + " la so le");
+        }
+
+
+        //switch case
+        document.writeln("<br>");
+        var d = new Date();
+        var theDay = d.getDay();
+        switch (theDay) {
+            case 5:
+                document.writeln("Finally Friday");
+                break;
+            case 6:
+                document.write("super Saturday");
+                break;
+            case 0:
+                document.write("sleepy Sunday");
+                break;
+            default:
+                document.write("I'm looking foward to this weekend");
+        }
+
+
+
+        for (var index = 1; index <= 10; index++) {
+            document.writeln("<br>");
+            document.writeln("khoa, Hiếu gay rõ" + index);
+        }
+
+
+        for (var i = 0; i < mangSo.length; i++) {
+            if(isNaN(mang[i]) ==true){
+                document.writeln("<br>");
+                document.writeln(mangSo[i]);
+            }
+        }
+
+
+        //while
+        var i = 0;
+        while (i <=10){
+            document.write("the number is" +i);
+            document.write("<br>");
+            i = i + 1;
+        }
+
+        //do while
+        var j=0;
+        do {
+            document.write("the number is" + j);
+            document.write("<br>");
+            j = j + 1;
+
+        } while (j <= 10);
+
+
+        //popup boxes
+        //alert("hello");
+
+        // var r = confirm("press a button")
+        // if ( r == true){
+        //     document.write("You pressed ÔK")
+        // }
+        // else{
+        //     document.write("you pressed cancel")
+        // }
+
+        //prompt 
+        var r = prompt("Nhập vào Họ và Tên", "Nhập tên ở đây");
+        document.write(r);
+
+
+
+
+
+
+
+
+
+
+
+
     </script>
     <script src="script.js"></script>
 </body>
