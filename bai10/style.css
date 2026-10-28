@@ -1,0 +1,35 @@
+.video {
+    width: 600px;
+    height: 350px;
+    margin: 30px auto;
+    display: block;
+    /* align-items: center;
+        flex-direction: column; */
+}
+
+.danh-sach {
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+p {
+    text-align: center;
+}
+.anh {
+    width: 24%;
+    height: 100px;
+}
+
+.anh img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.anh p {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 15px;
+}
