@@ -28,7 +28,6 @@ var danhSachVid = [
 function chonVid(id) {
     for (let i = 0; i < danhSachVid.length; i++) {
         if (danhSachVid[i].id == id) {
-            // document.write(danhSachVid[i].ten);
             document.getElementsByClassName("ten")[0].innerHTML = danhSachVid[i].ten;
             document.getElementsByTagName("iframe")[0].src = danhSachVid[i].duongDanYoutube;
         }

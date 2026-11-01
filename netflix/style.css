@@ -33,7 +33,7 @@ body {
     font-size: 15px;
 }
 
-#header nav ul li:hover {
+.hover:hover {
     background-color: darkgray;
     color: white;
     padding: 8px 12px;

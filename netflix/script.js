@@ -5,43 +5,43 @@ var danhSachPhim = [
         id: 1,
         ten: "Labrador",
         anh: "/anh/labrador.jpg",
-        trailer: "https://www.youtube.com/embed/rYWLIJB214Q?si=RTcOn67uqiZRyqkY"
+        link: "https://www.youtube.com/embed/rYWLIJB214Q?si=RTcOn67uqiZRyqkY"
     },
     {
         id: 2,
         ten: "Jura",
         anh: "/anh/jura.jpg",
-        trailer: "https://www.youtube.com/embed/aGIf5h1pCco?si=2CIfZgS-1Yv27CWm"
+        link: "https://www.youtube.com/embed/aGIf5h1pCco?si=2CIfZgS-1Yv27CWm"
     },
     {
         id: 3,
         ten: "Shrek",
         anh: "/anh/shreak.jpg",
-        trailer: "https://www.youtube.com/embed/WfVtZgc3Y8k?si=8n_77X-uN7nYEfks"
+        link: "https://www.youtube.com/embed/WfVtZgc3Y8k?si=8n_77X-uN7nYEfks"
     },
     {
         id: 4,
         ten: "Xitrum2",
         anh: "/anh/Xitrum2.jpg",
-        trailer: "https://www.youtube.com/embed/2MsxTstZ_Wo?si=sxJ_j_vkW8tFejJj"
+        link: "https://www.youtube.com/embed/2MsxTstZ_Wo?si=sxJ_j_vkW8tFejJj"
     },
     {
         id: 5,
         ten: "gaubeo",
         anh: "/anh/gaubeo.jpg",
-        trailer: "https://www.youtube.com/embed/hscSBeHYiK4?si=bKURfIHPMLYgOy5d"
+        link: "https://www.youtube.com/embed/hscSBeHYiK4?si=bKURfIHPMLYgOy5d"
     },
     {
         id: 6,
         ten: "labradormain",
         anh: "/anh/labradormain.jpg",
-        trailer: "https://www.youtube.com/embed/WmHIk7QNjac?si=jGOEp53K5Zi9p8lh"
+        link: "https://www.youtube.com/embed/WmHIk7QNjac?si=jGOEp53K5Zi9p8lh"
     },
     {
         id: 7,
         ten: "xitrum",
         anh: "/anh/xitrum.jpg",
-        trailer: "https://www.youtube.com/embed/s_GrhB1YQVQ?si=8v7rp7ZV09LM4abC"
+        link: "https://www.youtube.com/embed/s_GrhB1YQVQ?si=8v7rp7ZV09LM4abC"
     }
 ];
 
@@ -50,7 +50,7 @@ function xemTrailer(id) {
 
     if (id) {
         anh.style.display = "none";
-        video.src = phim.trailer;
+        video.src = phim.link;
         video.style.display = "block";
     }
 }
