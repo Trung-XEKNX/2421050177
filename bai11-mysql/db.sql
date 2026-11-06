@@ -89,6 +89,18 @@ INSERT INTO phim(ten_phim, quoc_gia, dao_dien_id, nam, do_tuoi, mo_ta) VALUES ('
 INSERT INTO phim(ten_phim, quoc_gia, dao_dien_id, nam, do_tuoi, mo_ta) VALUES ('Người đàm phán','Mỹ','4','2000/09/11','18','phim rất hay');
 INSERT INTO phim(ten_phim, quoc_gia, dao_dien_id, nam, do_tuoi, mo_ta) VALUES ('Sói già phố Wall','Việt Nam','5','2009/09/11','16','phim rất hay');
 
+INSERT INTO `phim_dien_vien`(`phim_id`, `dien_vien_id`) VALUES ('1','1');
+INSERT INTO `phim_dien_vien`(`phim_id`, `dien_vien_id`) VALUES ('2','2');
+INSERT INTO `phim_dien_vien`(`phim_id`, `dien_vien_id`) VALUES ('3','3');
+INSERT INTO `phim_dien_vien`(`phim_id`, `dien_vien_id`) VALUES ('4','4');
+INSERT INTO `phim_dien_vien`(`phim_id`, `dien_vien_id`) VALUES ('5','5');
+
+INSERT INTO `phim_the_loai`(`phim_id`, `the_loai_id`) VALUES ('1','1');
+INSERT INTO `phim_the_loai`(`phim_id`, `the_loai_id`) VALUES ('2','2');
+INSERT INTO `phim_the_loai`(`phim_id`, `the_loai_id`) VALUES ('3','3');
+INSERT INTO `phim_the_loai`(`phim_id`, `the_loai_id`) VALUES ('4','4');
+INSERT INTO `phim_the_loai`(`phim_id`, `the_loai_id`) VALUES ('5','5');
+
 SELECT p.ten_phim, dd.ho_ten as 'dao_dien', tl.ten_the_loai FROM 'phim' p 
 JOIN 'dao_dien' dd
 on p.dao_dien_id = dd.id
